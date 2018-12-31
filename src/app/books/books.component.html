@@ -14,3 +14,26 @@
     </div>
 </div>
 </div>
+
+DYNAMIC DROPDOWN EX
+<div class="container-fluid">
+	<div class="row" align="center">
+		<div class="col bg-dark text-white">
+			<H1> BOOK STORE APP</H1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-3 p-2">
+			<select 
+      [(ngModel)]="selectedType" (change)="changeType(selectedType)">
+        <option>(select One)</option>
+        <option *ngFor="let type of types">{{type}}</option>
+      </select>
+	 		</div>
+<div>
+  <select>
+    <option *ngFor="let book of books">{{book.name}}</option>
+  </select>
+</div>
+</div> 
+</div> 
